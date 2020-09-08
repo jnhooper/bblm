@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "serve": "next build && next export -o docs/ && touch docs/.nojekyll"
+    "move_CNAME_up": "mv docs/CNAME ./CNAME",
+    "move_CNAME_down": "mv CNAME docs/CNAME",
+    "serve": "next build && yarn run move_CNAME_up && next export -o docs/ && touch docs/.nojekyll && yarn run move_CNAME_down"
   },
   "dependencies": {
     "next": "9.5.3",
