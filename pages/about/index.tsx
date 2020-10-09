@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import {Title, SubTitle} from '../index';
+import {Title, SubTitle, StyledLogo} from '../index';
 import RootWrapper from '../../styles/layouts/RootWrapper';
 import Main from 'styles/layouts/Main';
 import Footer from 'styles/layouts/Footer';
@@ -12,10 +12,12 @@ const About = () => {
     <RootWrapper>
       <Head>
         <title>About Benicia Black Lives Matter</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/BBLM_Mark.svg" />
       </Head>
       <Main>
-        <Title>About Benicia Black Lives Matter</Title>
+        <Title>
+          <StyledLogo aria-hidden="true"/>
+          About Benicia Black Lives Matter</Title>
         <SubTitle>Coming soon</SubTitle>
       </Main>
       <Footer>

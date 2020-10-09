@@ -7,10 +7,10 @@ import styled from 'styled-components';
  */
 const StyledLink = styled.a({
   position: 'relative',
-  color: 'white',
+  // color: 'white',
   textDecoration: 'none',
   ':hover,:focus': {
-    color: 'white',
+    // color: 'white',
   },
   '::before': {
     content: '""',
@@ -20,6 +20,7 @@ const StyledLink = styled.a({
     bottom: 0,
     left: 0,
     backgroundColor: '#fddb3a',
+    // backgroundColor: '#333533',
     visibility: 'hidden',
     transform: 'scaleX(0)',
     transition: 'all 0.3s ease-in-out 0s',
