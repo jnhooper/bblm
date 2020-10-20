@@ -5,6 +5,6 @@ export const Main = styled.main({
   flex: 1,
   display: 'flex',
   flexDirection: 'column',
-  justifyContent: 'center',
+  // justifyContent: 'center',
   alignItems: 'center',
 });

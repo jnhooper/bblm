@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import {Title, SubTitle, StyledLogo} from '../index';
 import RootWrapper from '../../styles/layouts/RootWrapper';
 import Main from 'styles/layouts/Main';
@@ -25,6 +24,16 @@ const About = () => {
           href="/"
         >
           Home
+        </Link>
+        <Link
+          href="/interviews"
+        >
+          Interviews
+        </Link>
+        <Link
+          href="/about"
+        >
+          About
         </Link>
       </Footer>
     </RootWrapper>

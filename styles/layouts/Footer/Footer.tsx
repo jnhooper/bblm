@@ -5,6 +5,9 @@ export const Footer = styled.footer({
   height: '100px',
   borderTop: '0.1rem solid #221f3b',
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: 'space-around',
   alignItems: 'center',
+  position: 'sticky',
+  backgroundColor: 'black',
+  bottom: 0
 });

@@ -50,6 +50,16 @@ export default function Home() {
 
       <Footer>
         <Link
+          href="/"
+        >
+          Home
+        </Link>
+        <Link
+          href="/interviews"
+        >
+          Interviews
+        </Link>
+        <Link
           href="/about"
         >
           About
