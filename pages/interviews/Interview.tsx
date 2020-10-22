@@ -16,11 +16,18 @@ const StyledMarkDown = styled(ReactMarkdown)({
 })
 
 const Interview = (props) => {
+  const metaContent = ` Benicia Black lives matter, interview,
+    ${props.blurb}
+  `
   return (
     <RootWrapper>
       <Head>
         <title>{`Benicia Black Lives Matter Interview ${props.id}`}</title>
         <link rel="icon" href="/BBLM_Mark.svg" />
+        <meta
+          name="Description"
+          content={metaContent}
+        />
       </Head>
       <Main>
         <div

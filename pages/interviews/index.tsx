@@ -17,6 +17,10 @@ const InterviewHome = (props) => {
     <RootWrapper>
       <Head>
         <title>Our voices - Benicia Black Lives Matter</title>
+        <meta
+          name="Description"
+          content="Benicia Black Lives Matter, Our Voices, interviews"
+        />
         <link rel="icon" href="/BBLM_Mark.svg" />
       </Head>
       <Main>

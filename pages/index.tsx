@@ -38,6 +38,10 @@ export default function Home() {
       <Head>
         <title>Benicia Black Lives Matter</title>
         <link rel="icon" href="/BBLM_Mark.svg" />
+        <meta
+          name="Description"
+          content="Benicia Black Lives Matter, Home Page"
+        />
       </Head>
 
       <Main>
