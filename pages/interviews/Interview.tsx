@@ -31,7 +31,7 @@ const Interview = (props) => {
           }}
         >
           <Link href="/interviews">
-            &#60; Back to <em>Our voices</em>
+            &#60; Back to <em>Our Voices</em>
           </Link>
           <StyledMarkDown>
             {props.markdown}
@@ -47,7 +47,7 @@ const Interview = (props) => {
         <Link
           href="/interviews"
         >
-          Interviews
+          Our Voices
         </Link>
         <Link
           href="/about"
