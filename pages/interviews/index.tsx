@@ -9,23 +9,24 @@ import Main from 'styles/layouts/Main'
 import Footer from 'styles/layouts/Footer';
 import Link from '../../components/Link'
 import LogoMark from '../../public/BBLM_Mark.svg'
+import { Blockquote } from 'components/Blockquote/Blockquote';
 
 const InterviewHome = (props) => {
   const {interviews} = props
   return (
     <RootWrapper>
       <Head>
-        <title>About Benicia Black Lives Matter</title>
+        <title>Our voices - Benicia Black Lives Matter</title>
         <link rel="icon" href="/BBLM_Mark.svg" />
       </Head>
       <Main>
         <div
           style={{
-            // height: '100vh'
+            maxWidth: '600px'
           }}
         >
           <Title>
-            Interviews from Benicians
+            Our voices
           </Title>
           <ul
             style={{
@@ -35,17 +36,18 @@ const InterviewHome = (props) => {
             }}
           >
             {
-              interviews.map((interview) => (
+              interviews.map((interview, index) => (
                 <li
+                  key={`interview_${index}`}
                   style={{
                     marginTop: '30px'
                   }}
                 >
-                  <Link
+                  <Blockquote
                     href={`/interviews/${interview.id}`}
                   >
-                    {interview.title}
-                  </Link>
+                    {interview.blurb}
+                  </Blockquote>
                 </li>
               ))
             }
@@ -61,7 +63,7 @@ const InterviewHome = (props) => {
         <Link
           href="/interviews"
         >
-          Interviews
+          Our voices
         </Link>
         <Link
           href="/about"

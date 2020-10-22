@@ -28,7 +28,7 @@ const About = () => {
         <Link
           href="/interviews"
         >
-          Interviews
+          Our voices
         </Link>
         <Link
           href="/about"

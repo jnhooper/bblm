@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
+import styled from 'styled-components';
+
 import Head from 'next/head';
-import {Title, SubTitle, StyledLogo} from '../index';
 import RootWrapper from '../../styles/layouts/RootWrapper';
 import Main from 'styles/layouts/Main';
 import Footer from 'styles/layouts/Footer';
 import Link from '../../components/Link';
+
+const StyledMarkDown = styled(ReactMarkdown)({
+  lineHeight: '1.7rem',
+  p: {
+    fontSize: '1.15rem',
+  }
+})
 
 const Interview = (props) => {
   return (
@@ -19,12 +27,15 @@ const Interview = (props) => {
           style={{
             maxWidth: '600px',
             lineHeight: 1.2,
-            margin: '0 30px'
+            margin: '0 30px',
           }}
         >
-          <ReactMarkdown>
+          <Link href="/interviews">
+            &#60; Back to <em>Our voices</em>
+          </Link>
+          <StyledMarkDown>
             {props.markdown}
-          </ReactMarkdown>
+          </StyledMarkDown>
         </div>
     </Main>
     <Footer>

@@ -57,7 +57,7 @@ export default function Home() {
         <Link
           href="/interviews"
         >
-          Interviews
+          Our voices
         </Link>
         <Link
           href="/about"
