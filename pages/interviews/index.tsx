@@ -67,7 +67,7 @@ const InterviewHome = (props) => {
         <Link
           href="/interviews"
         >
-          Our voices
+          Our Voices
         </Link>
         <Link
           href="/about"
