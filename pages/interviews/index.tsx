@@ -16,7 +16,7 @@ const InterviewHome = (props) => {
   return (
     <RootWrapper>
       <Head>
-        <title>Our voices - Benicia Black Lives Matter</title>
+        <title>Our Voices - Benicia Black Lives Matter</title>
         <meta
           name="Description"
           content="Benicia Black Lives Matter, Our Voices, interviews"
@@ -30,7 +30,7 @@ const InterviewHome = (props) => {
           }}
         >
           <Title>
-            Our voices
+            Our Voices
           </Title>
           <ul
             style={{
