@@ -1,9 +1,10 @@
 import Head from 'next/head';
-import {Title, SubTitle, StyledLogo} from '../index';
+import {Title, SubTitle} from '../index';
 import RootWrapper from '../../styles/layouts/RootWrapper';
 import Main from 'styles/layouts/Main';
 import Footer from 'styles/layouts/Footer';
 import Link from '../../components/Link';
+import Logo from '../../components/Logo';
 
 
 const About = () => {
@@ -15,7 +16,7 @@ const About = () => {
       </Head>
       <Main>
         <Title>
-          <StyledLogo aria-hidden="true"/>
+          <Logo/>
           About Benicia Black Lives Matter</Title>
         <SubTitle>Coming soon</SubTitle>
       </Main>

@@ -3,7 +3,7 @@ import path from 'path'
 import React from 'react';
 import Head from 'next/head';
 
-import {Title, SubTitle, StyledLogo} from '../index';
+import {Title, SubTitle} from '../index';
 import RootWrapper from 'styles/layouts/RootWrapper'
 import Main from 'styles/layouts/Main'
 import Footer from 'styles/layouts/Footer';

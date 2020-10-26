@@ -5,7 +5,8 @@ import RootWrapper from 'styles/layouts/RootWrapper'
 import Main from 'styles/layouts/Main'
 import Footer from 'styles/layouts/Footer';
 import Link from '../components/Link'
-import LogoMark from '../public/BBLM_Mark.svg'
+// import LogoMark from '../public/BBLM_Mark.svg'
+import Logo from '../components/Logo';
 
 
 export const Title = styled.h1({
@@ -18,18 +19,18 @@ export const SubTitle = styled.h2({
   textAlign: 'center',
 });
 
-export const StyledLogo = styled(LogoMark)(
-  {
-    width: '50px',
-    marginRight: '24px',
-    path: {
-      fill: 'white'
-    },
-    ellipse: {
-      fill: 'black'
-    }
-  }
-)
+// export const StyledLogo = styled(LogoMark)(
+//   {
+//     width: '50px',
+//     marginRight: '24px',
+//     path: {
+//       fill: 'white'
+//     },
+//     ellipse: {
+//       fill: 'black'
+//     }
+//   }
+// )
 
 export default function Home() {
 
@@ -45,10 +46,16 @@ export default function Home() {
       </Head>
 
       <Main>
-        <Title>
-          <StyledLogo aria-hidden="true"/>
+        <h1
+          css={{
+            textAlign: 'center',
+            display: 'flex',
+            alignItems: 'center'
+          }}
+        >
+          <Logo/>
           Benicia Black Lives Matter
-        </Title>
+        </h1>
         <SubTitle>Coming soon</SubTitle>
       </Main>
 
