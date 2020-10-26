@@ -1,31 +1,28 @@
 import React from 'react';
 import NextLink from 'next/link';
-import styled from 'styled-components';
 import {blockquoteStyle, linkQuote} from './styles';
 
-const StyledBlockquote = styled.blockquote(blockquoteStyle)
-const StyledLinkBlock = styled.a(linkQuote)
 
 export const Blockquote = (props) => {
   const {children, cite, href} = props;
   const citeUrl = cite ? cite : (href ? href : null);
   const quote = (
-    <StyledBlockquote cite={citeUrl}>
+    <blockquote css={blockquoteStyle} cite={citeUrl}>
       <p>
         {
           children
         } ...<em>Click to read more</em>
       </p>
-    </StyledBlockquote>
+    </blockquote>
   )
 
   return (
     props.href ?
     (
       <NextLink passHref href={href}>
-        <StyledLinkBlock >
+        <a css={linkQuote}>
           {quote}
-        </StyledLinkBlock>
+        </a>
       </NextLink>
     )
  : quote
