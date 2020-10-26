@@ -21,10 +21,12 @@ export default Post
 
 
 export async function getStaticPaths() {
+  const markdownDirectory = path.join(process.cwd(), 'interviews');
+  const jsonFile = path.join(markdownDirectory, 'interviews.json');
+  const interviewJSON = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
+  const paths = interviewJSON.map(interview => ({params: {id: interview.id}}));
   return {
-    paths: [
-    { params: { id: '1' } },
-    { params: { id: '2' } }],
+    paths,
     fallback: false // See the "fallback" section below
   };
 }
