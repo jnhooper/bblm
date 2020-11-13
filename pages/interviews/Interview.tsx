@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
-import styled from 'styled-components';
 
 import Head from 'next/head';
 import RootWrapper from '../../styles/layouts/RootWrapper';
@@ -8,12 +7,6 @@ import Main from 'styles/layouts/Main';
 import Footer from 'styles/layouts/Footer';
 import Link from '../../components/Link';
 
-const StyledMarkDown = styled(ReactMarkdown)({
-  lineHeight: '1.7rem',
-  p: {
-    fontSize: '1.15rem',
-  }
-})
 
 const Interview = (props) => {
   const metaContent = ` Benicia Black lives matter, interview,
@@ -40,9 +33,16 @@ const Interview = (props) => {
           <Link href="/interviews">
             &#60; Back to <em>Our Voices</em>
           </Link>
-          <StyledMarkDown>
+          <ReactMarkdown
+            css={{
+              lineHeight: '1.7rem',
+              p: {
+                fontSize: '1.15rem',
+              }
+            }}
+          >
             {props.markdown}
-          </StyledMarkDown>
+          </ReactMarkdown>
         </div>
     </Main>
     <Footer>

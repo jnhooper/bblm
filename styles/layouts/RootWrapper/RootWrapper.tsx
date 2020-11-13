@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-
 export const RootWrapper = ({children}) => (
   <div
     css={{

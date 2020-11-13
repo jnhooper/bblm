@@ -8,6 +8,7 @@
     "start": "next start",
     "move_CNAME_up": "mv docs/CNAME ./CNAME",
     "move_CNAME_down": "mv CNAME docs/CNAME",
+    "clean": "yarn run move_CNAME_up && rm -rf docs/* && yarn run move_CNAME_down",
     "serve": "next build && yarn run move_CNAME_up && next export -o docs/ && touch docs/.nojekyll && yarn run move_CNAME_down"
   },
   "dependencies": {
@@ -18,18 +19,13 @@
     "next": "9.5.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-markdown": "^5.0.0",
-    "styled-components": "^5.2.0"
+    "react-markdown": "^5.0.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
     "@types/node": "^14.6.4",
     "@types/react": "^16.9.53",
     "babel-plugin-emotion": "^10.0.33",
-    "babel-plugin-styled-components": "^1.11.1",
     "typescript": "^4.0.2"
-  },
-  "resolutions": {
-    "styled-components": "^5"
   }
 }

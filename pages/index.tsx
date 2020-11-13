@@ -1,36 +1,33 @@
 import Head from 'next/head';
-import styled from 'styled-components'
 
 import RootWrapper from 'styles/layouts/RootWrapper'
 import Main from 'styles/layouts/Main'
 import Footer from 'styles/layouts/Footer';
 import Link from '../components/Link'
-// import LogoMark from '../public/BBLM_Mark.svg'
 import Logo from '../components/Logo';
 
+export const Title = ({children}) => (
+  <h1
+    css={{
+      textAlign: 'center',
+      display: 'flex',
+      alignItems: 'center',
+    }}
+  >
+    {
+      children
+    }
+  </h1>
+);
 
-export const Title = styled.h1({
-  textAlign: 'center',
-  display: 'flex',
-  alignItems: 'center'
-});
+export const SubTitle = ({children}) => (
+  <h2 css={{textAlign: 'center'}}>
+    {
+      children
+    }
+  </h2>
+);
 
-export const SubTitle = styled.h2({
-  textAlign: 'center',
-});
-
-// export const StyledLogo = styled(LogoMark)(
-//   {
-//     width: '50px',
-//     marginRight: '24px',
-//     path: {
-//       fill: 'white'
-//     },
-//     ellipse: {
-//       fill: 'black'
-//     }
-//   }
-// )
 
 export default function Home() {
 
@@ -46,16 +43,10 @@ export default function Home() {
       </Head>
 
       <Main>
-        <h1
-          css={{
-            textAlign: 'center',
-            display: 'flex',
-            alignItems: 'center'
-          }}
-        >
+        <Title>
           <Logo/>
           Benicia Black Lives Matter
-        </h1>
+       </Title>
         <SubTitle>Coming soon</SubTitle>
       </Main>
 
